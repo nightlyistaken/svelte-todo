@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap');
+
+main {
+	font-family: 'Urbanist', sans-serif;
+	text-align: center;
+	padding: 1em;
+	max-width: 240px;
+	margin: 0 auto;
+}
+
+.btn {
+	box-shadow: 0 10px 10px #0c021f, 0 8px 8px #040404;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-weight: 500;
+	border-radius: 4px;
+	padding: 0 16px;
+	border-radius: 4px;
+	color: #fff;
+	background: #6200ee;
+	line-height: 1.15;
+	font-size: 13px;
+	height: 41px;
+	word-spacing: 0px;
+	text-transform: uppercase;
+	min-width: 64px;
+	border: none;
+	text-align: center;
+	transition: min-width 10s;
+	:global(body.dark-mode) {
+		transition: background 1.2s;
+		background: black;
+	}
+	&:hover {
+		background: rgb(30, 0, 238);
+		transition: letter-spacing 0.9s;
+		letter-spacing: 0.2em;
+	}
+
+	transition: letter-spacing 0.9s;
+	letter-spacing: 0.0892857143em;
+	&:focus {
+		background: rgb(32, 0, 238);
+	}
+}
+
+h1 {
+	transition: color 0.9s;
+	color: #a6cfd5;
+	text-transform: uppercase;
+	font-size: 4.8em;
+	font-weight: 100;
+}
+$timerPadding: 0.5rem;
+$mainButtonPadding: 0.4rem;
+
+.toggler {
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+	border: none;
+	padding: 0 56px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 7px;
+	font-weight: 400;
+	font-size: 16px;
+	background: #fff;
+	color: #696969;
+	box-shadow: 0 4px 14px 0 rgb(0, 0, 0 / 10%);
+	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+	:hover {
+		background: rgba(255, 255, 255, 0.9);
+		box-shadow: 0 6px 20px rgb(93, 93, 93 / 23%);
+	}
+}
+
+:global(body.dark-mode) .toggler {
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+	border: none;
+	padding: 0 56px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 7px;
+	font-weight: 400;
+	font-size: 16px;
+	background: #fff;
+	color: #696969;
+	box-shadow: 0 4px 14px 0 rgb(0, 0, 0 / 10%);
+	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+	:hover {
+		background: rgba(255, 255, 255, 0.9);
+		box-shadow: 0 6px 20px rgb(93, 93, 93 / 23%);
+	}
+}
+p {
+	position: static;
+	transition: color 0.9s;
+	color: #a6cfd5;
+	font-size: 1.6em;
+	font-weight: 100;
+}
+a {
+	transition: color 0.9s;
+	color: #a6cfd5;
+	font-size: 1.17em;
+}
+@media (min-width: 375px) {
+	main {
+		max-width: none;
+	}
+}
+:global(body) {
+	cursor: crosshair;
+	background-color: #0d0221;
+	transition: background-color 0.38s;
+	h1 {
+		transition: color 1.3s;
+		color: #8a919c;
+	}
+	p {
+		transition: color 1.3s;
+		color: #8a919c;
+	}
+}
+:global(body.dark-mode) {
+	background: #8a919c;
+	color: #d6d6e7;
+	h1 {
+		transition: color 1.2s;
+		color: #0d0221;
+	}
+	p {
+		transition: color 1.2s;
+		color: #0d0221;
+	}
+}
